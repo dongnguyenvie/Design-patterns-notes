@@ -1,0 +1,15 @@
+{
+  "name": "creational_patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html"
+  },
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
