@@ -6,8 +6,7 @@
  * - Enables the programmer to add new different object of the same type
  *
  */
-
-const applyPattern = () => {
+;(() => {
     interface Computer {
         Compute(): void
     }
@@ -78,10 +77,14 @@ const applyPattern = () => {
         }
     }
 
-    const computerFactory = FactoryProducer.getFactory(true)
-    const computer1 = computerFactory.getComputer()
-    computer1.Compute()
-}
-console.log('>>> ABSTRACT FACTORY PATTERN')
-applyPattern()
-console.log('ABSTRACT FACTORY PATTERN <<<')
+    // Client Code
+    function clientCode() {
+        const computerFactory = FactoryProducer.getFactory(true)
+        const computer1 = computerFactory.getComputer()
+        computer1.Compute()
+    }
+
+    console.log('>>> ABSTRACT FACTORY PATTERN')
+    clientCode()
+    console.log('ABSTRACT FACTORY PATTERN <<<')
+})()

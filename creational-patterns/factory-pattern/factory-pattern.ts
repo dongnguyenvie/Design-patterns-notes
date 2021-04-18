@@ -9,7 +9,8 @@
  * - The complexity of this pattern tends to be high
  * - Cannot be refactored into
  */
-const applyFactoryPattern = () => {
+
+;(() => {
     interface Computer {
         Compute(): void
     }
@@ -58,13 +59,17 @@ const applyFactoryPattern = () => {
         }
     }
 
-    const randomComputerFactory = new RandomComputerFactory()
-    const computer1 = randomComputerFactory.getComputer()
-    computer1.Compute()
-    const randomComputerFactory2 = new RandomComputerFactory()
-    const computer2 = randomComputerFactory2.getComputer()
-    computer2.Compute()
-}
-console.log('>>> FACTORY PATTERN')
-applyFactoryPattern()
-console.log('FACTORY PATTERN <<<')
+    // Client code
+    function clientCode() {
+        const randomComputerFactory = new RandomComputerFactory()
+        const computer1 = randomComputerFactory.getComputer()
+        computer1.Compute()
+        const randomComputerFactory2 = new RandomComputerFactory()
+        const computer2 = randomComputerFactory2.getComputer()
+        computer2.Compute()
+    }
+
+    console.log('>>> FACTORY PATTERN')
+    clientCode()
+    console.log('FACTORY PATTERN <<<')
+})()

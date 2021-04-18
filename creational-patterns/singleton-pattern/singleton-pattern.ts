@@ -10,7 +10,7 @@
  * Thread pool
  * Cache
  */
-const applyPattern = () => {
+;(() => {
     class SingletonLogger {
         private static instance = new SingletonLogger()
 
@@ -35,13 +35,17 @@ const applyPattern = () => {
             console.log('LazySingletonLogger is created')
         }
     }
-    const singletonLogger = new SingletonLogger()
-    singletonLogger.message()
 
-    const lazySingletonLogger = new LazySingletonLogger()
-    lazySingletonLogger.message()
-}
+    // client code
+    function clientCode() {
+        const singletonLogger = new SingletonLogger()
+        singletonLogger.message()
 
-console.log('>>> FACTORY PATTERN')
-applyPattern()
-console.log('FACTORY PATTERN <<<')
+        const lazySingletonLogger = new LazySingletonLogger()
+        lazySingletonLogger.message()
+    }
+
+    console.log('>>> FACTORY PATTERN')
+    clientCode()
+    console.log('FACTORY PATTERN <<<')
+})()
