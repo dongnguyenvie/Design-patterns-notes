@@ -96,5 +96,7 @@ const applyPattern = () => {
     console.log('applyPattern', { joinSmith })
 }
 
+console.log('>>>> BUILDER PATTERN')
 NonePattern()
 applyPattern()
+console.log('BUILDER PATTERN <<<<')
