@@ -1,5 +1,5 @@
 /**
- * FEATURES OF THE FACTORY PATTERN
+ * FEATURES OF THE ABSTRACT FACTORY PATTERN
  *
  * >> Advantages
  * - Hides the internal logic of creating objects
@@ -7,7 +7,7 @@
  *
  */
 
-const applyFactoryPattern = () => {
+const applyPattern = () => {
     interface Computer {
         Compute(): void
     }
@@ -83,5 +83,5 @@ const applyFactoryPattern = () => {
     computer1.Compute()
 }
 console.log('>>> ABSTRACT FACTORY PATTERN')
-applyFactoryPattern()
+applyPattern()
 console.log('ABSTRACT FACTORY PATTERN <<<')
