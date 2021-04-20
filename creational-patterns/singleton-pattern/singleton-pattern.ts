@@ -45,8 +45,8 @@
         lazySingletonLogger.message()
     }
 
-    console.log('>>> FACTORY PATTERN')
+    console.log('>>> SINGLETON PATTERN')
     clientCode()
-    console.log('FACTORY PATTERN <<<')
+    console.log('SINGLETON PATTERN <<<')
     console.log('\n')
 })()

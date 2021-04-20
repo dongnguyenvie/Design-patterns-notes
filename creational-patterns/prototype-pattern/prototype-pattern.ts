@@ -75,8 +75,8 @@
         }
     }
 
-    console.log('>>> FACTORY PATTERN')
+    console.log('>>> PROTOTYPE PATTERN')
     clientCode()
-    console.log('FACTORY PATTERN <<<')
+    console.log('PROTOTYPE PATTERN <<<')
     console.log('\n')
 })()
