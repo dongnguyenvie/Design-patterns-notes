@@ -72,4 +72,5 @@
     console.log('>>> FACTORY PATTERN')
     clientCode()
     console.log('FACTORY PATTERN <<<')
+    console.log('\n')
 })()

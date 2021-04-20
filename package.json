@@ -1,15 +1,17 @@
 {
-  "name": "creational_patterns",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.html"
-  },
-  "author": "",
-  "description": "",
-  "devDependencies": {
-    "typescript": "^4.2.4"
-  }
+    "name": "design_patterns",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "./node_modules/.bin/parcel index.html"
+    },
+    "author": "",
+    "description": "",
+    "devDependencies": {
+        "typescript": "^4.2.4"
+    },
+    "dependencies": {
+        "parcel-bundler": "^1.12.5"
+    }
 }

@@ -106,4 +106,5 @@
     NonePattern()
     applyPattern()
     console.log('BUILDER PATTERN <<<<')
+    console.log('\n')
 })()

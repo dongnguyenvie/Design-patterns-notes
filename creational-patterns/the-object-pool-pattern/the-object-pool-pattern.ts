@@ -106,8 +106,8 @@
         await employeePool.getEmployee()
     }
 
-    console.log('>>> THE OBJECT POOL PATTERN')
     clientCode().then(() => {
         console.log('THE OBJECT POOL PATTERN <<<')
+        console.log('\n')
     })
 })()

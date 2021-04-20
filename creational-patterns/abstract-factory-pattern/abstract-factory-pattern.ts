@@ -87,4 +87,5 @@
     console.log('>>> ABSTRACT FACTORY PATTERN')
     clientCode()
     console.log('ABSTRACT FACTORY PATTERN <<<')
+    console.log('\n')
 })()
