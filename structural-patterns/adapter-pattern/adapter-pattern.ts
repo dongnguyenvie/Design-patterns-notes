@@ -20,7 +20,7 @@
         }
     }
 
-    // and we want to converting real bird into bird toys
+    // and we want to convert real bird into bird toys or we can new BirdToy instance 
     interface BirdToy {
         squeak: () => void
     }
